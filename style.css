@@ -1,0 +1,234 @@
+@media (max-width: 576px) {
+  :root {
+    --body-font-family: "Inter", sans-serif;
+    --heading-font-size: 3rem;
+    --emphasis-text-size: 2rem;
+    --normal-text-color: rgb(56, 54, 54);
+    --root-font-size: 16px;
+    --body-background: rgb(241, 241, 241);
+  }
+
+  html {
+    font-size: var(--root-font-size);
+  }
+
+  body {
+    font-family: var(--body-font-family);
+    font-weight: 600;
+    background-color: var(--body-background);
+    padding: 0;
+    margin-inline: 0;
+  }
+
+  header, .tag_intro{
+    padding: 2rem 1rem;
+  }
+
+  .menu{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width:100%;
+    height: 100vh;
+    z-index: 999;
+    background-color: var(--body-background);
+    padding: 2rem 1rem;
+    display: none;
+    padding: 2rem 1rem;
+  }
+
+  .menu a{
+    margin-block: 1rem;
+    display: block;
+  }
+
+  .menu p{
+    padding: 0;
+    margin: 0;
+  }
+
+  header a{
+    text-decoration: none;
+    color: var(--normal-text-color);
+    font-size: 1rem;
+  }
+
+  #menu:target{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+  }
+
+  summary{
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker{
+    display: none;
+  }
+
+  .icon{
+    height: 1.3rem;
+    padding: 0;
+    margin-right: 0.3rem;
+  }
+
+  .close{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid grey; */
+    width: 80%;
+    margin-inline: 1.5rem;
+  }
+
+  .appbar{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sia{
+    color: rgb(190, 137, 0);
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tagline{
+    text-align: center;
+  }
+
+  .intro{
+    color: var(--normal-text-color);
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .tag_intro{
+    margin-bottom: 0;
+    /* border: 1px solid grey; */
+    padding-bottom: 0.5rem;
+    padding-top: 0;
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .africa{
+    position: relative;
+    width:100%;
+    height: 18.7rem;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    margin-block: 0;
+    border: none;
+    overflow: hidden;
+  }
+
+  .img-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2) 60%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+
+  .more_intro{
+    margin-top:-2rem;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    padding: 5rem 1rem 0.5rem;
+  }
+
+  .more_intro > p{
+    color: rgb(151, 148, 148);
+  }
+
+  
+
+  .emphasis{
+    color: white;
+  }
+
+  .text{
+    font-size: 0.9rem;
+  }
+
+  .box{
+    color: rgb(29, 233, 29);
+    height: 0.8rem;
+  }
+
+  .package-text{
+    color: rgb(151, 148, 148);;
+  }
+
+  .colloquiums{
+    background-color: var(--body-background);
+    padding: 1rem 1rem 0.5rem;
+  }
+
+  .new{
+    color: var(--normal-text-color);
+  }
+
+  .sparkles{
+    height: 0.8rem;
+  }
+
+  .team{
+    width:100%;
+    height: 18.7rem;
+    object-fit: cover;
+  }
+
+  footer{
+    padding: 1rem 1rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  footer> a{
+    color: gray;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .mobile-container{
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+    .mobile-container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .messageforbigscreen {
+      display: block;
+      text-align: center;
+    }
+  
+    .prevent {
+      display: none;
+    }
+  
+    footer {
+      display: none;
+    }
+  }
+  
